@@ -1,0 +1,75 @@
+/* Footer */
+footer {
+  margin-top: 20px;
+  height: 560px;
+  background-color: #232f3e;
+}
+footer > a :hover {
+  background: #485769;
+}
+footer > a {
+  text-decoration: none;
+}
+.back-top {
+  height: 50px;
+  background-color: #37475a;
+}
+.back-top > p {
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-size: 14px;
+}
+.main-footer {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.main-footer-col:first-child {
+  padding: 10px 10px 0 10px;
+}
+.main-footer-col:last-child {
+  padding: 10px 10px 0 10px;
+}
+.main-footer-col {
+  padding-top: 10px;
+  margin-top: 20px;
+}
+.main-footer-col .col-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 20px;
+  margin-bottom: 14px;
+}
+.main-footer-col > ul > li {
+  list-style: none;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.main-footer-col > ul > li > a {
+  text-decoration: none;
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 14px;
+}
+.main-footer-col > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+.copyright-footer {
+  width: 1000px;
+  height: 20px;
+  margin: 10px auto;
+}
+
+.copyright-img {
+  height: 50px;
+  width: 120px;
+  object-fit: cover;
+  margin-left: 428px;
+  margin-top: 30px;
+}

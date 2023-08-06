@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Arial", sans-serif;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 103px;
+  height: 31px;
+  margin-top: 15px;
+}
+.card {
+  height: 550px;
+  width: 350px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 15px 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+section hr {
+  width: 350px;
+  margin: 20px auto;
+}
+.create-form {
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 13px;
+  color: black;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+.create-form:hover {
+  background-color: #edfdff;
+}
+.form form > p {
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 15px;
+}
+.form form > input {
+  width: 295px;
+  height: 30px;
+  margin: 10px 0 0 0;
+  border-radius: 3px;
+  outline: none;
+  padding: 15px;
+  border: 0.2px solid gray;
+  line-height: 30px;
+}
+.submit-btn {
+  width: 295px;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 15px;
+  background-color: #ffd814;
+  border: 0.3px;
+}
+.privacy {
+  width: 295px;
+  font-size: 12px;
+  margin-top: 15px;
+  line-height: 20px;
+}
+.pri-a {
+  text-decoration: none;
+  color: rgba(0, 0, 255, 0.527);
+}
+.card-hr {
+  width: 200px;
+  margin: 20px auto;
+}
+.error {
+  font-size: 11px;
+  color: red;
+  font-style: italic;
+}
