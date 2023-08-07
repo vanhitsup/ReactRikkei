@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+// import LifeCycle from './components/LifeCycle'
+import FormComp from './components/FormComp'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  // constructor(){
+  //   super();
+  //   this.state={
+  //     name:"Rikkei",
+  //   }
+  // }
+  // handleChangeProps=()=>{
+  //   this.setState({
+  //     name:"Học viện CNTTS"
+  //   })
+  // }
+  render() {
+    return (
+      <div>
+        {/* <LifeCycle title={this.state.name}></LifeCycle>
+        <button onClick={this.handleChangeProps}> Chan props</button> */}
+        <FormComp></FormComp>
+      </div>
+    )
+  }
 }
-
-export default App;
