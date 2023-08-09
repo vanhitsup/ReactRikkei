@@ -50,6 +50,7 @@ section hr {
   font-size: 13px;
   font-weight: bold;
   padding-top: 15px;
+  text-align: left;
 }
 .form form > input {
   width: 295px;
@@ -68,6 +69,9 @@ section hr {
   margin-top: 15px;
   background-color: #ffd814;
   border: 0.3px;
+}
+.submit-btn:hover{
+  cursor: pointer;
 }
 .privacy {
   width: 295px;

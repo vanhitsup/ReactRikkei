@@ -6,8 +6,8 @@ import ViewRegister from './components/Page/ViewRegister';
 function App() {
   return (
     <div className="App">
-     <ViewLogin></ViewLogin>
-      {/* <ViewRegister></ViewRegister> */}
+     {/* <ViewLogin></ViewLogin> */}
+      <ViewRegister></ViewRegister>
     </div>
   );
 }
