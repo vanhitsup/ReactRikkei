@@ -7,6 +7,14 @@ import NotFound from './components/NotFound';
 import ContactUser from './components/ContactUser';
 import ContactAdmin from './components/ContactAdmin';
 import ContactIndex from './components/ContactIndex';
+import DemoNavigate from './components/DemoNavigate';
+import Course from './components/DynamicRoute/Course';
+import CourseDetail from './components/DynamicRoute/CourseDetail';
+import CourseDetailByType from './components/DynamicRoute/CourseDetailByType';
+import PrivateRoute from './components/ProtectRoute/PrivateRoute';
+import Person from './components/ProtectRoute/Person';
+import Account from './components/ProtectRoute/Account';
+import Login from './components/ProtectRoute/Login';
 function App() {
   const activeColor=({isActive})=>({
 
@@ -44,6 +52,12 @@ function App() {
           <NavLink to="/" style={activeColor}>HomePage</NavLink>
         </li>
         <li>
+          <NavLink to="/about" style={activeColor}>About</NavLink>
+        </li>
+        <li>
+          <NavLink to="/course" style={activeColor}>Course</NavLink>
+        </li>
+        <li>
           <NavLink to="/contact" style={activeColor}>Contact</NavLink>
           <ul>
             <li>
@@ -54,11 +68,13 @@ function App() {
             </li>
           </ul>
         </li>
-        <li>
-          <NavLink to="/about" style={activeColor}>About</NavLink>
-        </li>
-
+     
       </ul>
+
+      {/* Demo navigate */}
+      <DemoNavigate></DemoNavigate>
+
+
       <Routes>
         <Route path='/' element={<Homepage/>}></Route>
         <Route path='/about' element={<About/>}></Route>
@@ -70,6 +86,20 @@ function App() {
             {/* Demo index Router contact */}
             <Route index  element={<ContactIndex/>}></Route>
         </Route>
+
+        {/* Demo Dynamic Route */}
+        <Route path='/course' element={<Course/>}></Route>
+        <Route path='/course/:id' element={<CourseDetail/>}></Route>
+        <Route path='/course/:id/:type' element={<CourseDetailByType/>}></Route>
+
+        {/* Demo protect route */}
+        <Route  element={<PrivateRoute/>}>
+            <Route path='/person' element={<Person/>}></Route>
+            <Route path='/account' element={<Account/>}></Route>
+        </Route>
+        <Route path='/login' element={<Login/>} ></Route>
+
+      {/* NotFound Page */}
         <Route path='*' element={<NotFound/>}></Route>
       </Routes>
     </div>

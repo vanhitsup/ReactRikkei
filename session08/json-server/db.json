@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "vietanh",
+      "email": "vanhitsp@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "hiep",
+      "email": "hiep1111@gmail.com"
+    },
+    {
+      "email": "ptva.me@gmail1111.com",
+      "id": 4
+    }
+  ]
+}
